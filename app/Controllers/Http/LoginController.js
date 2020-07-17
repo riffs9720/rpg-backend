@@ -1,6 +1,7 @@
 'use strict'
 
 const Player = use('App/Models/Player')
+const Mestre = use('App/Models/Mestre')
 
 class LoginController {
 
@@ -10,6 +11,10 @@ class LoginController {
     const token = await auth.attempt(nome, password)
 
     const user = await Player.findBy('nome', nome)
+
+    if(!user){
+      const user = await Mestre.findBy('nome', nome)
+    }
 
     if (token) {
       response.response.setHeader(

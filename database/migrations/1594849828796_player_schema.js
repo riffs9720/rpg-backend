@@ -38,7 +38,7 @@ class PlayerSchema extends Schema {
       table.integer('previsaoAtri')
       table.integer('velocidadeAtri')
       table.string('password', 60).notNullable()
-      table.string('nivelAcesso').notNullable().defaultTo('player')
+      table.string('nivelAcesso').notNullable().defaultTo('Player')
       table.integer('qtdPocaoHp25')
       table.integer('qtdPocaoHp50')
       table.integer('qtdPocaoHp100')

@@ -19,6 +19,7 @@ const Route = use('Route')
 Route.post("/Login", "LoginController.autenticacao")
 
 Route.resource('player', 'PlayerController')
+Route.resource('mestre', 'MestreController')
 Route.resource('equipamento', 'EquipamentoController')
 Route.resource('tipo', 'TipoController')
 Route.resource('helmo', 'HelmoController')
