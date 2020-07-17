@@ -12,8 +12,8 @@ class LoginController {
 
     const user = await Player.findBy('nome', nome)
 
-    if(!user){
-      const user = await Mestre.findBy('nome', nome)
+    if(user == null){
+      user = await Mestre.findBy('nome', nome)
     }
 
     if (token) {
