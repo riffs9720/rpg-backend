@@ -18,7 +18,7 @@ module.exports = {
   */
  origin: function (requestOrigin) {
   console.log(requestOrigin)
-  return requestOrigin === 'https://rpg-frontend.herokuapp.com/'
+  return requestOrigin === 'https://rpg-frontend.herokuapp.com'
 },
 
   /*
