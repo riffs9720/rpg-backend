@@ -21,7 +21,7 @@ module.exports = {
 //   return requestOrigin === 'https://rpg-frontend.herokuapp.com'
 // },
 
-origin: false,
+origin: true,
 
   /*
   |--------------------------------------------------------------------------
