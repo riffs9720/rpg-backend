@@ -16,10 +16,12 @@ module.exports = {
   | Function - Receives the current origin and should return one of the above values.
   |
   */
- origin: function (requestOrigin) {
-  console.log(requestOrigin)
-  return requestOrigin === 'https://rpg-frontend.herokuapp.com'
-},
+//  origin: function (requestOrigin) {
+//   console.log(requestOrigin)
+//   return requestOrigin === 'https://rpg-frontend.herokuapp.com'
+// },
+
+origin: false,
 
   /*
   |--------------------------------------------------------------------------

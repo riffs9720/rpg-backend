@@ -45,6 +45,14 @@ class PlayerSchema extends Schema {
       table.integer('qtdPocaoMp25')
       table.integer('qtdPocaoMp50')
       table.integer('qtdPocaoMp100')
+      table
+      .integer('equipamento_id')
+      .unsigned()
+      .notNullable()
+      .references('id')
+      .inTable('players')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
       table.timestamps()
     })
   }
